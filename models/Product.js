@@ -6,14 +6,13 @@ class Product extends Model {}
 Product.init(
   {
     name:{
-        type:DataTypes.STRING,allowNull: False
+        type:DataTypes.STRING,allowNull: false
     },
     price: {
         type: DataTypes.DECIMAL,allowNull: false
     },
     quantity: {
-        type: DataTypes.INTEGER,
-        allowNull: false,
+        type: DataTypes.INTEGER,allowNull: false,
         validate :{
             isDecimal: true
         }
